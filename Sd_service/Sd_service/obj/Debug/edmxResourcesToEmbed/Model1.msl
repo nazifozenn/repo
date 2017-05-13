@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ServiceDeskDBModelStoreContainer" CdmEntityContainer="ServiceDeskDBEntities">
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="ServiceDeskDBModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="customer_surname" ColumnName="customer_surname" />
+          <ScalarProperty Name="customer_phone" ColumnName="customer_phone" />
+          <ScalarProperty Name="customer_adress" ColumnName="customer_adress" />
+          <ScalarProperty Name="customer_mail" ColumnName="customer_mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="ServiceDeskDBModel.Tasks">
+        <MappingFragment StoreEntitySet="Tasks">
+          <ScalarProperty Name="task_status" ColumnName="task_status" />
+          <ScalarProperty Name="task_id" ColumnName="task_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="users_user_id" ColumnName="users_user_id" />
+          <ScalarProperty Name="task_product_type" ColumnName="task_product_type" />
+          <ScalarProperty Name="task_product_name" ColumnName="task_product_name" />
+          <ScalarProperty Name="task_product_brand" ColumnName="task_product_brand" />
+          <ScalarProperty Name="task_product_serial_number" ColumnName="task_product_serial_number" />
+          <ScalarProperty Name="task_detail" ColumnName="task_detail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ServiceDeskDBModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="user_fullname" ColumnName="user_fullname" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_password" ColumnName="user_password" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_department" ColumnName="user_department" />
+          <ScalarProperty Name="user_phone" ColumnName="user_phone" />
+          <ScalarProperty Name="user_adress" ColumnName="user_adress" />
+          <ScalarProperty Name="user_mail" ColumnName="user_mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

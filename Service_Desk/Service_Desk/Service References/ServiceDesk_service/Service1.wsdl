@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:32050/desk.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:32050/desk.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:32050/desk.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Sd_service" />
+      <xsd:import schemaLocation="http://localhost:32050/desk.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_login_InputMessage">
+    <wsdl:part name="parameters" element="tns:login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_create_customer_InputMessage">
+    <wsdl:part name="parameters" element="tns:create_customer" />
+  </wsdl:message>
+  <wsdl:message name="IService1_create_customer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:create_customerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_customer_InputMessage">
+    <wsdl:part name="parameters" element="tns:customer" />
+  </wsdl:message>
+  <wsdl:message name="IService1_customer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:customerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_user_InputMessage">
+    <wsdl:part name="parameters" element="tns:user" />
+  </wsdl:message>
+  <wsdl:message name="IService1_user_OutputMessage">
+    <wsdl:part name="parameters" element="tns:userResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_task_InputMessage">
+    <wsdl:part name="parameters" element="tns:task" />
+  </wsdl:message>
+  <wsdl:message name="IService1_task_OutputMessage">
+    <wsdl:part name="parameters" element="tns:taskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_create_task_InputMessage">
+    <wsdl:part name="parameters" element="tns:create_task" />
+  </wsdl:message>
+  <wsdl:message name="IService1_create_task_OutputMessage">
+    <wsdl:part name="parameters" element="tns:create_taskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_update_task_InputMessage">
+    <wsdl:part name="parameters" element="tns:update_task" />
+  </wsdl:message>
+  <wsdl:message name="IService1_update_task_OutputMessage">
+    <wsdl:part name="parameters" element="tns:update_taskResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/login" message="tns:IService1_login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/loginResponse" message="tns:IService1_login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create_customer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/create_customer" message="tns:IService1_create_customer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/create_customerResponse" message="tns:IService1_create_customer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="customer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/customer" message="tns:IService1_customer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/customerResponse" message="tns:IService1_customer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="user">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/user" message="tns:IService1_user_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/userResponse" message="tns:IService1_user_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="task">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/task" message="tns:IService1_task_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/taskResponse" message="tns:IService1_task_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create_task">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/create_task" message="tns:IService1_create_task_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/create_taskResponse" message="tns:IService1_create_task_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update_task">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/update_task" message="tns:IService1_update_task_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/update_taskResponse" message="tns:IService1_update_task_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="login">
+      <soap:operation soapAction="http://tempuri.org/IService1/login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create_customer">
+      <soap:operation soapAction="http://tempuri.org/IService1/create_customer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="customer">
+      <soap:operation soapAction="http://tempuri.org/IService1/customer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="user">
+      <soap:operation soapAction="http://tempuri.org/IService1/user" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="task">
+      <soap:operation soapAction="http://tempuri.org/IService1/task" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create_task">
+      <soap:operation soapAction="http://tempuri.org/IService1/create_task" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_task">
+      <soap:operation soapAction="http://tempuri.org/IService1/update_task" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:32050/desk.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

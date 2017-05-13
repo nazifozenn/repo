@@ -1,0 +1,16 @@
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\bin\Debug\Service_Desk.exe.config
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\bin\Debug\Service_Desk.exe
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\bin\Debug\Service_Desk.pdb
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\bin\Debug\Telerik.WinControls.dll
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\bin\Debug\Telerik.WinControls.UI.dll
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\bin\Debug\TelerikCommon.dll
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\bin\Debug\Telerik.WinControls.xml
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\bin\Debug\Telerik.WinControls.UI.xml
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\obj\x86\Debug\Service_Desk.Properties.Resources.resources
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\obj\x86\Debug\Service_Desk.csproj.GenerateResource.Cache
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\obj\x86\Debug\Service_Desk.exe.licenses
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\obj\x86\Debug\Service_Desk.exe
+c:\users\nazifozen\OneDrive\Projects\Service_Desk\Service_Desk\obj\x86\Debug\Service_Desk.pdb
+C:\Users\NazifOzen\OneDrive\Projects\Service_Desk\Service_Desk\obj\x86\Debug\Service_Desk.login_form.resources
+C:\Users\NazifOzen\OneDrive\Projects\Service_Desk\Service_Desk\obj\x86\Debug\Service_Desk.csprojResolveAssemblyReference.cache
+C:\Users\NazifOzen\OneDrive\Projects\Service_Desk\Service_Desk\obj\x86\Debug\Service_Desk.RadForm2.resources

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:32050/desk.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Sd_service" />
+  <xs:element name="login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="loginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="create_customer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customer_name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customer_surname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customer_phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customer_mail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customer_adress" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="create_customerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="create_customerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="customer">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="customerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Sd_service" minOccurs="0" name="customerResult" nillable="true" type="q1:CustomerData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="user">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="userResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Sd_service" minOccurs="0" name="userResult" nillable="true" type="q2:UserData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="task">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="taskResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Sd_service" minOccurs="0" name="taskResult" nillable="true" type="q3:TaskData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="create_task">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customer_id" type="xs:int" />
+        <xs:element minOccurs="0" name="users_user_id" type="xs:int" />
+        <xs:element minOccurs="0" name="task_product_type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="task_product_name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="task_product_brand" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="task_product_serial_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="task_detail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="create_taskResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="create_taskResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_task">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="task_id" type="xs:int" />
+        <xs:element minOccurs="0" name="status" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_taskResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="update_taskResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

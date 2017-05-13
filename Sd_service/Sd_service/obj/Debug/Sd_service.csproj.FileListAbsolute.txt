@@ -1,0 +1,16 @@
+c:\users\nazifozen\OneDrive\Projects\Sd_service\Sd_service\bin\Sd_service.dll.config
+c:\users\nazifozen\OneDrive\Projects\Sd_service\Sd_service\bin\Sd_service.dll
+c:\users\nazifozen\OneDrive\Projects\Sd_service\Sd_service\bin\Sd_service.pdb
+c:\users\nazifozen\OneDrive\Projects\Sd_service\Sd_service\obj\Debug\Sd_service.dll
+c:\users\nazifozen\OneDrive\Projects\Sd_service\Sd_service\obj\Debug\Sd_service.pdb
+C:\Users\NazifOzen\OneDrive\Projects\Sd_service\Sd_service\bin\EntityFramework.dll
+C:\Users\NazifOzen\OneDrive\Projects\Sd_service\Sd_service\bin\SQLite.Designer.dll
+C:\Users\NazifOzen\OneDrive\Projects\Sd_service\Sd_service\bin\System.Data.SQLite.dll
+C:\Users\NazifOzen\OneDrive\Projects\Sd_service\Sd_service\bin\SQLite.Designer.pdb
+C:\Users\NazifOzen\OneDrive\Projects\Sd_service\Sd_service\bin\EntityFramework.SqlServer.dll
+C:\Users\NazifOzen\OneDrive\Projects\Sd_service\Sd_service\bin\System.Data.SQLite.EF6.dll
+C:\Users\NazifOzen\OneDrive\Projects\Sd_service\Sd_service\bin\System.Data.SQLite.Linq.dll
+C:\Users\NazifOzen\OneDrive\Projects\Sd_service\Sd_service\bin\EntityFramework.xml
+C:\Users\NazifOzen\OneDrive\Projects\Sd_service\Sd_service\bin\EntityFramework.SqlServer.xml
+C:\Users\NazifOzen\OneDrive\Projects\Sd_service\Sd_service\bin\System.Data.SQLite.xml
+C:\Users\NazifOzen\OneDrive\Projects\Sd_service\Sd_service\obj\Debug\Sd_service.csprojResolveAssemblyReference.cache
